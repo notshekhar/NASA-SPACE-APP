@@ -53,3 +53,27 @@ setInterval(() => {
     count++
     if (count == image_buffer.length) count = 0
 }, 2000)
+
+let submit = document.querySelector(".submit")
+submit.onclick = () => {
+    let name = document.querySelector(".name_in")
+    let email = document.querySelector(".email_in")
+    let subject = document.querySelector(".subject")
+    let description = document.querySelector(".description")
+    let data = {
+        name: name.value,
+        email: email.value,
+        subject: subject.value,
+        description: description.value,
+    }
+    console.log(data)
+    fetch("https://nasa-space-app-contact-api.glitch.me/addContact", {
+        method: "POST", 
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+    }).then(e=>{
+        console.log("done")
+    })
+}
