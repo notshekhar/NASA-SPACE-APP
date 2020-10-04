@@ -38,6 +38,9 @@ html {
 .article_show {
     top: 0px !important;
 }
+.fa-angle-left{
+    color: white;
+}
 .wrap_article {
     position: fixed;
     display: block;
@@ -63,7 +66,7 @@ html {
     left: 40px;
     width: 40px;
     height: 40px;
-    background-color: white;
+    background-color: transparent   ;
 }
 .wrap_article .article {
     position: absolute;
