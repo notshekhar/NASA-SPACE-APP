@@ -299,7 +299,7 @@ section .title::after {
     color: crimson;
     font-weight: 500;
 }
-.home .home-content a {
+.home .home-content a, .covid-a {
     display: inline-block;
     background: crimson;
     color: #ffffff;
@@ -310,7 +310,7 @@ section .title::after {
     border: 2px solid crimson;
     transition: all 0.3s ease;
 }
-.home .home-content a:hover {
+.home .home-content a:hover, .covid-a:hover {
     color: crimson;
     background: none;
 }
