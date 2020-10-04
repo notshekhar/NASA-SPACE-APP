@@ -581,6 +581,7 @@ section .title::after {
     border-radius: 6px;
     padding: 25px 35px;
     text-align: center;
+    height: 300px;
     transition: all 400ms ease;
 }
 
