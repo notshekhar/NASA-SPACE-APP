@@ -1,4 +1,4 @@
-let cards = document.querySelectorAll(".card")
+let cards = document.querySelectorAll(".cards")
 // console.log(cards)
 cards[0].onclick = () => {
     let aerosol = document.querySelector(".aerosol")

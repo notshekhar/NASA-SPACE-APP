@@ -31,13 +31,26 @@ $(document).ready(function () {
         $("html").css("scrollBehavior", "smooth")
     })
 
-    // document.onclick = function(e) {
-    //     console.log(e.srcElement)
-    // }
+
+    document.querySelectorAll(".article").forEach(article=>{
+        article.onscroll = function () {
+            if (this.scrollTop > 500) {
+                this.querySelector(".scroll-up-btn-a").classList.add("show")
+            } else {
+                this.querySelector(".scroll-up-btn-a").classList.remove("show")
+            }
+        }
+    })
+    $(".scroll-up-btn-a").click(function () {
+        $(".article").animate({ scrollTop: 0 })
+        // removing smooth scroll on slide-up button click
+        $(".article").css("scrollBehavior", "auto")
+    })
 
     $(".close_article").click(function () {
         $(".wrap_article").removeClass("article_show")
     })
+
     //owl carousel script
     $(".carousel").owlCarousel({
         margin: 20,

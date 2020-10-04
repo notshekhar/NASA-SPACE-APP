@@ -38,7 +38,7 @@ html {
 .article_show {
     top: 0px !important;
 }
-.fa-angle-left{
+.fa-angle-left {
     color: white;
     size: 7x;
 }
@@ -58,7 +58,7 @@ html {
     top: 0px;
     left: 0px;
     width: 100%;
-    height: 100%;
+    height: 100px;
     background-color: #111111;
 }
 .wrap_article .wrapbody .close_article {
@@ -67,7 +67,7 @@ html {
     left: 40px;
     width: 40px;
     height: 40px;
-    background-color: transparent   ;
+    background-color: transparent;
 }
 .wrap_article .article {
     position: absolute;
@@ -75,17 +75,17 @@ html {
     left: 0px;
     width: 100%;
     height: calc(100% - 60px);
-    background-color: #222222;
+    background-color: white;
     border-radius: 21px 21px 0 0;
     overflow-y: scroll;
 }
 .wrap_article .article::-webkit-scrollbar-track {
     border-radius: 10px;
-    background-color: #222222;
+    background-color: white;
 }
 .wrap_article .article::-webkit-scrollbar {
     width: 5px;
-    background-color: #222222;
+    background-color: white;
 }
 .wrap_article .article::-webkit-scrollbar-thumb {
     border-radius: 30px;
@@ -97,10 +97,6 @@ html {
     left: 0px;
     width: 100%;
     height: 300px;
-    background-image: url(./images/Background-imag.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -108,21 +104,103 @@ html {
 .wrap_article .article .articleheader .heading {
     font-weight: 800;
     font-family: "Ubuntu", sans-serif;
-    font-size: 50px;
+    font-size: 30px;
     color: white;
     transition: all 400ms;
+    z-index: 10;
 }
 .wrap_article .article .articleheader .heading:hover {
     color: crimson;
 }
 .wrap_article .article .articlebody {
-    color: white;
-    font-family: "Ubuntu", sans-serif;
+    /* color: white; */
+    font-family: Poppins, sans-serif;
     padding: 40px;
     line-height: 40px;
+    font-weight: 300;
+}
+/* article body image  */
+.articlebody img,
+.column-left img {
+    position: relative;
+    left: calc(50% - 250px);
+    align-self: center;
+    width: 500px;
+    height: auto;
+    border-radius: 21px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+/* card_backgrounds */
+.climate {
+    background-image: url(./images/climatic_changes.jpeg);
+}
+.earth_article {
+    background-image: url(./images/earth\ science\ image\ 1.png);
+}
+.climatic_changes {
+    background-image: url(./images/climatic_changes.jpeg);
+}
+.future_article {
+    background-image: url("./images/futureEarth/Death\ of\ the\ sun..jpg");
+}
+.aerosol_card {
+    background-image: url(./images/aerosols\ 1.jpg);
+}
+.wildfire_card {
+    background-image: url(./images/wildlife\ fire\ 1.jpg);
+}
+.ozone_card {
+    background-image: url(./images/losing\ of\ ozone\ 3.jpg);
+}
+.condition_card {
+    background-image: url(./images/nasa1.jpg);
+}
+.disaster_card {
+    background-image: url(./images/windstorm_insurance_homeowners_property_NJ_NY_CA_FL_primeins.jpg);
+}
+.warming_card {
+    background-image: url(./images/global\ warming\ 1.jpg);
+}
+
+/* article backgrounds */
+.header_bg {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.earthscience_bg {
+    background-image: url(./images/earth\ science\ image\ 1.png);
+}
+.how_bg {
+    background-image: url(./images/wildlife\ fire\ 1.jpg);
+}
+.ozone_bg {
+    background-image: url(./images/losing\ of\ ozone\ 3.jpg);
+}
+.aerosol_bg {
+    background-image: url(./images/aerosols\ 1.jpg);
+}
+.warming_bg {
+    background-image: url(./images/global\ warming\ 1.jpg);
+}
+.disaster_bg {
+    background-image: url(./images/windstorm_insurance_homeowners_property_NJ_NY_CA_FL_primeins.jpg);
+}
+.condition_bg {
+    background-image: url(./images/nasa1.jpg);
+}
+.futureearth_bg {
+    background-image: url("./images/futureEarth/Death\ of\ the\ sun..jpg");
 }
 
 /* all similar content styling codes */
+
 section {
     padding: 100px 0;
 }
@@ -130,6 +208,15 @@ section {
     max-width: 1300px;
     padding: 0 80px;
     margin: auto;
+}
+section .max-width video {
+    position: relative;
+    width: 80%;
+    align-self: center;
+    height: auto;
+    border-radius: 21px;
+    outline: none;
+    left: calc(50% - 40%);
 }
 section .title {
     position: relative;
@@ -246,7 +333,7 @@ section .title::after {
     text-align: center;
     line-height: 45px;
     color: #fff;
-    z-index: 9999;
+    z-index: 999999999;
     font-size: 30px;
     border-radius: 6px;
     border-bottom-width: 2px;
@@ -274,11 +361,15 @@ section .title::after {
 /* home section styling */
 .home {
     display: flex;
-    background: url("images/Background-imag.png") no-repeat center;
+    background-image: url("images/Background-imag.png");
+    background-repeat: no-repeat;
+    background-position: center;
     height: 100vh;
+    background-size: cover;
     color: #ffffff;
     min-height: 500px;
     font-family: "Ubuntu", sans-serif;
+    transition: all 500ms;
 }
 .home .max-width {
     margin: auto 0 auto 30px;
@@ -287,7 +378,7 @@ section .title::after {
     font-size: 27px;
 }
 .home .home-content .text-2 {
-    font-size: 75px;
+    font-size: 40px;
     font-weight: 600;
     margin-left: -3px;
 }
@@ -299,7 +390,8 @@ section .title::after {
     color: crimson;
     font-weight: 500;
 }
-.home .home-content a, .covid-a {
+.home .home-content a,
+.covid-a {
     display: inline-block;
     background: crimson;
     color: #ffffff;
@@ -310,12 +402,13 @@ section .title::after {
     border: 2px solid crimson;
     transition: all 0.3s ease;
 }
-.home .home-content a:hover, .covid-a:hover {
+.home .home-content a:hover,
+.covid-a:hover {
     color: crimson;
     background: none;
 }
 
-.partners a{
+.partners a {
     color: white;
 }
 
@@ -329,8 +422,7 @@ section {
 .teams,
 .contact,
 .covid,
-.sponsor
-footer {
+.sponsor footer {
     font-family: "Poppins", sans-serif;
 }
 .about .about-content,
@@ -404,6 +496,13 @@ section .title::after {
     object-fit: cover;
     border-radius: 6px;
 }
+.about .about-content .left video {
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
 .about .about-content .right {
     width: 55%;
 }
@@ -446,8 +545,7 @@ section .title::after {
 .resources .title::before,
 .teams .title::before,
 .partners .title::before,
-.covid .title::before
-{
+.covid .title::before {
     background: #fff;
 }
 .resources .title::after,
@@ -456,42 +554,61 @@ section .title::after {
     content: "what we provide";
 }
 .resources .res-content .card {
-    /* width: calc(33% - 20px);
-    background: #222222;
+    width: calc(33% - 20px);
+    background-color: #222222;
     text-align: center;
     border-radius: 6px;
     padding: 20px 25px;
     cursor: pointer;
-    transition: all 0.3s ease; */
-    background: #222222;
+    transition: all 400ms ease;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background: #222222;
     border-radius: 6px;
     padding: 25px 35px;
     text-align: center;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease; */
 }
-.resources .res-content .card:hover {
+.resources .res-content .cards {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #222222;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    transition: all 400ms ease;
+}
+
+.resources .res-content .card:hover,
+.resources .res-content .cards:hover {
     background: crimson;
 }
-.resources .res-content .card .box {
+.resources .res-content .card .box,
+.resources .res-content .cards .box {
     transition: all 0.3s ease;
 }
-.resources .res-content .card:hover .box {
+.resources .res-content .card:hover .box,
+.resources .res-content .cards:hover .box {
     transform: scale(1.05);
 }
-.resources .res-content .card i {
+.resources .res-content .card i,
+.resources .res-content .cards i {
     font-size: 50px;
     color: crimson;
     transition: color 0.3s ease;
 }
-.resources .res-content .card:hover i {
+.resources .res-content .card:hover i,
+.resources .res-content .cards:hover i {
     color: #fff;
 }
-.resources .res-content .card .text {
+.resources .res-content .card .text,
+.resources .res-content .cards .text {
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
-
 /* history section styling */
 
 .history .title::after {
@@ -572,9 +689,9 @@ section .title::after {
 }
 
 /* contact section styling */
-.contact .title::after {
+/* .contact .title::after {
     content: "get in touch";
-}
+} */
 .contact .contact-content .column {
     width: calc(50% - 30px);
 }
@@ -673,7 +790,6 @@ section .title::after {
     content: "our partners";
 }
 
-
 /* footer section styling */
 footer {
     background: #111111;
@@ -699,6 +815,10 @@ footer span a:hover {
     .about .about-content .left img {
         height: 350px;
         width: 350px;
+    }
+    .about .about-content .left video {
+        width: 100%;
+        left: calc(50% - 50%);
     }
 }
 
@@ -771,6 +891,15 @@ footer span a:hover {
         margin-bottom: 35px;
     }
 }
+@media (max-width: 500px) {
+    /* article body image  */
+    .articlebody img,
+    .column-left img {
+        width: 100%;
+        height: auto;
+    }
+}
+
 @media (max-width: 690px) {
     .max-width {
         padding: 0 23px;
