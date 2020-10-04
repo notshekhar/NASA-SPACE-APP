@@ -573,6 +573,9 @@ section .title::after {
     text-align: center;
     transition: all 0.3s ease; */
 }
+footer a{
+    color: white;
+}
 .resources .res-content .cards {
     background-size: cover;
     background-position: center;
