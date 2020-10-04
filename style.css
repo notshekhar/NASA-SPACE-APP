@@ -369,7 +369,7 @@ section .title::after {
     color: #ffffff;
     min-height: 500px;
     font-family: "Ubuntu", sans-serif;
-    transition: all 800ms;
+    transition: all 1000ms;
 }
 .home .max-width {
     margin: auto 0 auto 30px;
@@ -897,6 +897,7 @@ footer span a:hover {
     .column-left img {
         width: 100%;
         height: auto;
+        left: calc(50% - 50%);
     }
 }
 
