@@ -26,14 +26,14 @@ $(".future_article").click(function () {
 
 let video = document.querySelector("section .max-width video")
 
-window.onscroll = () => {
-    let scrolY = window.scrollY
-    if ((scrolY >= 2400) & (scrolY <= 3400)) {
-        video.play()
-    } else {
-        video.pause()
-    }
-}
+// window.onscroll = () => {
+//     let scrolY = window.scrollY
+//     if ((scrolY >= 2400) & (scrolY <= 3400)) {
+//         video.play()
+//     } else {
+//         video.pause()
+//     }
+// }
 
 let home_bg = document.querySelector(".home")
 
