@@ -1,3 +1,8 @@
+$(".menu li").click(() => {
+    $(".navbar .menu").toggleClass("active")
+    $(".menu-btn i").toggleClass("active")
+})
+
 // typing text animation script
 var typed = new Typed(".typing", {
     strings: ["Scientists", "Developer", "Blogger", "Designer", "Freelancer"],
