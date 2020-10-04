@@ -369,7 +369,7 @@ section .title::after {
     color: #ffffff;
     min-height: 500px;
     font-family: "Ubuntu", sans-serif;
-    transition: all 1000ms;
+    transition: all 900ms;
 }
 .home .max-width {
     margin: auto 0 auto 30px;
@@ -416,6 +416,7 @@ section .title::after {
 section {
     padding: 100px 0;
 }
+
 .about,
 .resources,
 .history,
@@ -424,6 +425,7 @@ section {
 .covid,
 .sponsor footer {
     font-family: "Poppins", sans-serif;
+
 }
 .about .about-content,
 .resources .res-content,
@@ -516,6 +518,7 @@ section .title::after {
 }
 .about .about-content .right p {
     text-align: justify;
+    font-size: 25px;
 }
 
 .about .about-content .right a {
